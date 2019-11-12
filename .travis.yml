@@ -1,5 +1,6 @@
-language: swift
+language: objective-c
 osx_image: xcode11.2
 xcode_project: Karumi.xcodeproj
 xcode_scheme: Karumi
-platform: iOS Simulator,OS=13.2,name=iPhone 11 Pro Max
+xcode_sdk: iphonesimulator13.0
+script: xcodebuild -project Karumi.xcodeproj -scheme Karumi -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
